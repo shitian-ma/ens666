@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-
+var AV = require('leanengine');
 app.use(express.static('./'));
-
+app.use(AV.express());
 // 可以将一类的路由单独保存在一个文件中
 //app.use('/todos', todos);
 //app.use('/users', users);
